@@ -1,0 +1,104 @@
+html {
+    height: 100%;
+  }
+  
+  body {
+    background: url("background1.jpg") top center / cover no-repeat;
+    min-height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #main {
+    background-color: rgba(255, 255, 255, 0.356);
+    padding: 60px 30px 30px;
+    border-radius: 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  #main div {
+    position: relative;
+  }
+  
+  #main .name {
+    font-weight: 700;
+    font-size: 30px;
+    color: rgb(65, 29, 161);
+    text-align: center;
+  }
+  
+  #main .avatar {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    /*object-position: top;*/
+    border-radius: 50%;
+  }
+  
+  #main .quote {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 25px;
+  }
+  
+  #main .author {
+    text-align: end;
+    font-style: italic;
+  }
+  
+  #main .interests,
+  #main .project,
+  #main .language {
+    font-size: 18px;
+  }
+  
+  #main .project {
+    height: 21px;
+    align-items: center;
+    color: #000;
+  }
+  
+  #main .project a {
+    text-decoration: none;
+    color: red;
+  }
+  #main .interests:hover .Subnav,
+  #main .language:hover .Subnav,
+  #main .project:hover .Subnav {
+    display: block;
+  }
+  
+  #main .Subnav {
+    display: none;
+    position: absolute;
+    top: -20px;
+    left: 60px;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  
+  #main .icon {
+    padding: 12px 0;
+    text-align: justify;
+  }
+  
+  #main .fa-brands {
+    color: #000;
+    font-size: 20px;
+  }
+  
+  #blur {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(8px);
+  }
+  
+  #wrapper {
+    padding-top: 50px;
+  }
+  
